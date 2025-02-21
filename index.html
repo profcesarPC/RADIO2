@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Rádio João Maffei Rosa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Web Rádio João Maffei Rosa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicial">Inicial</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#locutores">Locutores</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Youtube</a>
+            <a href="#" target="_blank">X</a>
+            <a href="#" target="_blank">WhatsApp</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicial">
+            <h2>Inicial</h2>
+            <div class="player">
+                <audio controls>
+                    <source src="https://stream.url.da.sua.radio" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+            <div class="ultimas-musicas">
+                <h3>Últimas Músicas Tocadas</h3>
+                <ul id="ultimas-musicas-lista"></ul>
+            </div>
+        </section>
+
+        <section id="quem-somos">
+            <h2>Quem Somos</h2>
+            <p>Informações sobre a web rádio e o colégio.</p>
+        </section>
+
+        <section id="programacao">
+            <h2>Programação</h2>
+            <p>Grade de programação da rádio.</p>
+        </section>
+
+        <section id="locutores">
+            <h2>Locutores</h2>
+            <p>Perfis dos locutores.</p>
+        </section>
+
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <p>Últimas notícias da escola e da rádio.</p>
+        </section>
+
+        <section id="fotos">
+            <h2>Fotos</h2>
+            <div class="galeria">
+                <!-- Adicione imagens aqui -->
+            </div>
+        </section>
+
+        <section id="artigos">
+            <h2>Artigos</h2>
+            <p>Artigos escritos por alunos e professores.</p>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <p>Calendário de eventos.</p>
+        </section>
+
+        <section id="equipe">
+            <h2>Equipe</h2>
+            <p>Informações sobre a equipe técnica e administrativa.</p>
+        </section>
+
+        <section id="peça-sua-musica">
+            <h2>Peça sua Música</h2>
+            <form id="form-pedido-musica">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="text" id="musica" placeholder="Nome da música" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="mural">
+            <h2>Mural</h2>
+            <div id="mural-mensagens"></div>
+        </section>
+
+        <section id="estatisticas">
+            <h2>Estatísticas</h2>
+            <p>Visitas totais: <span id="visitas-totais">0</span></p>
+            <p>Usuários online: <span id="usuarios-online">0</span></p>
+        </section>
+
+        <section id="hora-certa">
+            <h2>Hora Certa</h2>
+            <p id="hora-atual"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Rádio João Maffei Rosa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
